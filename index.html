@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Videoigara</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <h1>Katalog Videoigara</h1>
+            <div class="header-stats">
+                <span class="counter-badge">Prikazano zapisa: <strong id="brojac-zapisa">0</strong></span>
+            </div>
+        </div>
+        
+       
+        <div class="controls-container">
+            <div class="filter-group">
+                <span class="control-label">Kategorije:</span>
+                <button class="filter-btn active" data-kategorija="sve">Sve</button>
+                <button class="filter-btn" data-kategorija="RPG">RPG</button>
+                <button class="filter-btn" data-kategorija="Akcija">Akcija</button>
+                <button class="filter-btn" data-kategorija="Simulacija">Simulacija</button>
+                <button class="filter-btn" data-kategorija="Strategija">Strategija</button>
+            </div>
+            <div class="sort-group">
+                <span class="control-label">Sortiraj:</span>
+                <button class="sort-btn active" data-sort="naziv">Po nazivu (A-Z)</button>
+                <button class="sort-btn" data-sort="ocjena">Po ocjeni (Najviša)</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <section id="katalog-spremnik" class="grid-container"></section>
+
+       
+        <div id="prazno-stanje" class="empty-state hidden">
+            <p>Trenutno nema zapisa u odabranoj kategoriji ili je katalog prazan.</p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Katalog Videoigara. Izrađeno za vježbu.</p>
+    </footer>
+
+
+    <script type="module" src="js/main.js" defer></script>
+</body>
+</html>
